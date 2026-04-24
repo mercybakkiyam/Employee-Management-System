@@ -1,0 +1,57 @@
+﻿body {
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    width: 350px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    margin: 100px auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.toggle-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.toggle-btn {
+    background: gray;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 50%;
+    cursor: pointer;
+}
+
+.toggle-btn.active {
+    background: orange;
+}
+
+.textbox {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-login {
+    background: orange;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}

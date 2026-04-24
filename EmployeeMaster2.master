@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="EmployeeMaster2.master.cs" Inherits="EmployeeMaster" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Employee Portal</title>
+    <link rel="stylesheet" href="EmployeeStyleSheet2.css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo-container">
+                <img src="logo3.png" alt="Logo" class="logo">
+            </div>
+            <h1>Employee Portal</h1>
+            <div class="profile-container">
+                <img id="imgProfile" runat="server" alt="Profile" class="profile-img" />
+                <div class="profile-dropdown">
+                    <asp:Label ID="lblUsername" runat="server" CssClass="username"></asp:Label>
+                        <a href="EmployeeLogin.aspx" class="logout-btn">Logout</a>
+                </div>
+            </div>
+
+       </div>
+
+
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="EmployeeHome.aspx">Home</a></li>
+                <li><a href="EmployeeProfile.aspx">Profile</a></li>
+                <li><a href="ApplyLeave.aspx">Apply for Leave</a></li>
+                <li><a href="LeaveStatus.aspx">Leave Status</a></li>
+                <li><a href="Payroll.aspx">Payroll Details</a></li>
+                <li><a href="Attendance.aspx">Attendance</a></li>
+                <li><a href="CompanyPolicies.aspx">Company Policies</a></li>
+            </ul>
+        </nav>
+
+        <div class="main-content">
+            <form id="form1" runat="server">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </form>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Employee Management System. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

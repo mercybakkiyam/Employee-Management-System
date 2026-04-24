@@ -1,0 +1,58 @@
+﻿/* Centered Login Page */
+.login-body {
+    background-color: #2C3E50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 356px; /* Fixed width to ensure equal spacing on both sides */
+    text-align: center;
+    height: 310px;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.btn {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background: #2C3E50;
+    color: white;
+    padding: 10px; /* Reduced padding for a smaller button */
+    margin: 12px 0; /* Increased margin for spacing between password and button */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
